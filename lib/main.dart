@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:cookbook/event_calendar/manage_state/event_calender_cubit.dart';
+import 'package:cookbook/tinder_card/tinder_cards.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -81,6 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           buildButtonNavigator(
               context, 'Animation page route', const AnimationPageHome()),
+          buildButtonNavigator(context, 'Tinder cards', const TinderCards()),
         ],
       ),
     );
