@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'animation_page_route/animation_page_home.dart';
+import 'event_calendar/event_calendar_home.dart';
 import 'excel_viewer/excel_home.dart';
 
 void main() {
@@ -93,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
               context, 'Zoom drawer', const ZoomDrawer(maxSlideScale: 0.8)),
           buildButtonNavigator(context, 'Wave animation', const WaveHome()),
           buildButtonNavigator(context, 'Excel view', const ExcelHome()),
+          buildButtonNavigator(context, 'Events calendar', const EventCalendarHome()),
         ],
       ),
     );
