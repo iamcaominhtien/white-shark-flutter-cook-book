@@ -35,11 +35,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        darkTheme: ThemeData.dark().copyWith(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        themeMode: ThemeMode.system,
+        themeMode: ThemeMode.light,
         home: const MyHomePage(title: 'Flutter Demo Home Page'),
       ),
     );
