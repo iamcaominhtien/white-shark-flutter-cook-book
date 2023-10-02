@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:cookbook/event_calendar/manage_state/event_calender_cubit.dart';
 import 'package:cookbook/physic_simulation/physic_simulation.dart';
 import 'package:cookbook/tinder_card/tinder_cards.dart';
+import 'package:cookbook/wave/wave_home.dart';
 import 'package:cookbook/zoom_drawer/zoom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -89,6 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               context, 'Physic simulation', const PhysicSimulation()),
           buildButtonNavigator(
               context, 'Zoom drawer', const ZoomDrawer(maxSlideScale: 0.8)),
+          buildButtonNavigator(context, 'Wave animation', const WaveHome()),
         ],
       ),
     );
